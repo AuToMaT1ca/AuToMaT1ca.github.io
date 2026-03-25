@@ -1,0 +1,936 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>AuToMaT1ca | AuToMaT1ca</title><meta name="author" content="Matic"><meta name="copyright" content="Matic"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="NOT 404 ,BUT 鹅螺蛳        * {       margin: 0;       padding: 0;       box-sizing: border-box;       font-family: &#39;Microsoft YaHei&#39;, Arial, sans-serif;     }     body {       min-height: 100v">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AuToMaT1ca">
+<meta property="og:url" content="http://automat1ca.top/404">
+<meta property="og:site_name" content="AuToMaT1ca">
+<meta property="og:description" content="NOT 404 ,BUT 鹅螺蛳        * {       margin: 0;       padding: 0;       box-sizing: border-box;       font-family: &#39;Microsoft YaHei&#39;, Arial, sans-serif;     }     body {       min-height: 100v">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://automat1ca.top/img/avator.jpg">
+<meta property="article:published_time" content="2026-03-23T07:10:14.641Z">
+<meta property="article:modified_time" content="2026-03-22T14:15:47.372Z">
+<meta property="article:author" content="Matic">
+<meta property="article:tag" content="no">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://automat1ca.top/img/avator.jpg"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://automat1ca.top/404"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta/><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.json","preload":true,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":"ture","highlightMacStyle":true},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'AuToMaT1ca',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'page'
+}</script><link rel="stylesheet" href="/css/transparent.css"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/footer.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.1"></head><body><div class="bg-animation" id="web_bg" style="background-image: url(/img/1.png);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avator.jpg" onerror="this.onerror=null;this.src='/img/6.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 目录</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我们</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header" style="background-image: url(/img/2.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="/img/favicon.png" alt="Logo"><span class="site-name">AuToMaT1ca</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 目录</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我们</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title"></h1></div></header><main class="layout" id="content-inner"><div id="page"><div class="container" id="article-container"><!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOT 404 ,BUT 鹅螺蛳</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Microsoft YaHei', Arial, sans-serif;
+    }
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      color: #fff;
+      -webkit-tap-highlight-color: transparent; /* 取消手机点击高亮 */
+    }
+    .game-container {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    /* 游戏主容器（标题+画布绑定，完美对齐） */
+    .game-main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .game-title {
+      font-size: 32px;
+      font-weight: 700;
+      background: linear-gradient(90deg, #00d4ff, #0099ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+    }
+    #gameCanvas {
+      border: 3px solid rgba(0, 212, 255, 0.5);
+      border-radius: 12px;
+      background: #0f0f1e;
+      box-shadow: 0 0 30px rgba(0, 212, 255, 0.2);
+      touch-action: none; /* 禁止手机画布触摸滚动 */
+    }
+    /* 左侧预览+按键面板 */
+    .left-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 82px; /* 和游戏画布顶部对齐，保持对称 */
+    }
+    .preview-card {
+      background: rgba(15, 15, 30, 0.8);
+      border: 2px solid rgba(0, 212, 255, 0.3);
+      border-radius: 10px;
+      padding: 15px 20px;
+      min-width: 180px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .preview-card h3 {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.6);
+      margin-bottom: 8px;
+      font-weight: 400;
+    }
+    #nextCanvas {
+      background: #0f0f1e;
+      border-radius: 8px;
+      margin-top: 8px;
+    }
+    /* 新增：手机端虚拟按键面板 */
+    .control-panel {
+      background: rgba(15, 15, 30, 0.8);
+      border: 2px solid rgba(0, 212, 255, 0.3);
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .control-row {
+      display: flex;
+      gap: 12px;
+      justify-content: space-between;
+    }
+    .control-btn {
+      flex: 1;
+      min-width: 70px;
+      height: 50px;
+      background: linear-gradient(90deg, #0099ff, #00d4ff);
+      border: 2px solid rgba(0, 212, 255, 0.4);
+      border-radius: 8px;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      box-shadow: 0 4px 10px rgba(0, 153, 255, 0.3);
+      user-select: none; /* 禁止文字选中 */
+    }
+    /* 按键hover/点击效果 */
+    .control-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(0, 153, 255, 0.4);
+    }
+    .control-btn:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 5px rgba(0, 153, 255, 0.2);
+      background: linear-gradient(90deg, #0077cc, #00aacc);
+    }
+    /* 右侧信息面板 */
+    .info-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 82px; /* 和左侧面板顶部对齐，保持对称 */
+    }
+    .info-card {
+      background: rgba(15, 15, 30, 0.8);
+      border: 2px solid rgba(0, 212, 255, 0.3);
+      border-radius: 10px;
+      padding: 15px 20px;
+      min-width: 180px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+    .info-card h3 {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.6);
+      margin-bottom: 8px;
+      font-weight: 400;
+    }
+    .info-card .value {
+      font-size: 28px;
+      font-weight: 700;
+      background: linear-gradient(90deg, #00d4ff, #00ff88);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .tips-card {
+      font-size: 13px;
+      line-height: 1.8;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .tips-card kbd {
+      display: inline-block;
+      padding: 2px 6px;
+      margin: 0 3px;
+      background: rgba(0, 212, 255, 0.2);
+      border: 1px solid rgba(0, 212, 255, 0.4);
+      border-radius: 4px;
+      color: #fff;
+      font-size: 12px;
+    }
+    #restartBtn {
+      width: 100%;
+      padding: 12px 0;
+      margin-top: 10px;
+      background: linear-gradient(90deg, #0099ff, #00d4ff);
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 15px rgba(0, 153, 255, 0.3);
+    }
+    #restartBtn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 153, 255, 0.4);
+    }
+    #gameOverMask {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.8);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+      flex-direction: column;
+      gap: 20px;
+    }
+    #gameOverMask h2 {
+      font-size: 48px;
+      color: #ff4757;
+      text-shadow: 0 0 20px rgba(255, 71, 87, 0.5);
+    }
+    #gameOverMask p {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    /* 手机端响应式适配 */
+    @media (max-width: 768px) {
+      .game-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+      .left-panel, .info-panel {
+        margin-top: 0;
+        width: 300px;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .preview-card, .control-panel, .info-card {
+        min-width: auto;
+        flex: 1;
+      }
+      .control-btn {
+        min-width: 60px;
+        height: 45px;
+        font-size: 16px;
+      }
+      .game-title {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="game-container">
+    <!-- 左侧：下一个方块预览 + 虚拟按键 -->
+    <div class="left-panel">
+      <div class="preview-card">
+        <h3>下一个方块</h3>
+        <canvas id="nextCanvas" width="180" height="150"></canvas>
+      </div>
+      <!-- 手机端虚拟控制按键 -->
+      <div class="control-panel">
+        <div class="control-row">
+          <button class="control-btn" id="btnLeft">←</button>
+          <button class="control-btn" id="btnRight">→</button>
+        </div>
+        <div class="control-row">
+          <button class="control-btn" id="btnDown">⚡</button>
+          <button class="control-btn" id="btnChange">change</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 中间：游戏主区域（标题+画布绑定，完美居中对齐） -->
+    <div class="game-main">
+      <h1 class="game-title">404 鹅螺蛳方块</h1>
+      <canvas id="gameCanvas" width="300" height="600"></canvas>
+    </div>
+
+    <!-- 右侧：计分、操作说明等信息 -->
+    <div class="info-panel">
+      <div class="info-card">
+        <h3>得分</h3>
+        <div class="value" id="score">0</div>
+      </div>
+      <div class="info-card">
+        <h3>消除行数</h3>
+        <div class="value" id="lines">0</div>
+      </div>
+      <div class="info-card">
+        <h3>等级</h3>
+        <div class="value" id="level">1</div>
+      </div>
+      <div class="info-card tips-card">
+        <h3>操作说明</h3>
+        <div><kbd>←→</kbd> 左右移动</div>
+        <div><kbd>↓</kbd> 加速下落</div>
+        <div><kbd>空格</kbd> 旋转方块</div>
+        <div><kbd>点击屏幕</kbd> 旋转方块</div>
+      </div>
+      <button id="restartBtn">重新开始游戏</button>
+    </div>
+  </div>
+
+  <div id="gameOverMask">
+    <h2>游戏结束</h2>
+    <p>最终得分：<span id="finalScore">0</span></p>
+    <button id="restartBtn2" style="padding: 12px 30px; font-size: 18px;">再来一局</button>
+  </div>
+
+  <script>
+    // 画布初始化
+    const canvas = document.getElementById('gameCanvas');
+    const ctx = canvas.getContext('2d');
+    // 左侧预览画布
+    const nextCanvas = document.getElementById('nextCanvas');
+    const nextCtx = nextCanvas.getContext('2d');
+
+    // 元素获取
+    const scoreEl = document.getElementById('score');
+    const linesEl = document.getElementById('lines');
+    const levelEl = document.getElementById('level');
+    const gameOverMask = document.getElementById('gameOverMask');
+    const finalScoreEl = document.getElementById('finalScore');
+    const restartBtn = document.getElementById('restartBtn');
+    const restartBtn2 = document.getElementById('restartBtn2');
+    // 新增：虚拟按键元素获取
+    const btnLeft = document.getElementById('btnLeft');
+    const btnRight = document.getElementById('btnRight');
+    const btnDown = document.getElementById('btnDown');
+    const btnChange = document.getElementById('btnChange');
+
+    // 游戏核心参数
+    const ROW = 20; // 总行数
+    const COL = 10; // 总列数
+    const BLOCK_SIZE = 30; // 主游戏单个方块大小
+    const PREVIEW_BLOCK_SIZE = 20; // 预览区方块大小
+    let board = Array(ROW).fill().map(() => Array(COL).fill(0)); // 游戏棋盘
+    let score = 0;
+    let lines = 0;
+    let level = 1;
+    let gameOver = false;
+    let dropInterval = 800; // 下落间隔(ms)
+    let lastDropTime = 0;
+
+    // 经典7种俄罗斯方块 + 对应光滑质感配色
+    const SHAPES = [
+      // I型
+      {
+        shape: [[1, 1, 1, 1]],
+        color: { light: '#00f5ff', dark: '#0099cc', glow: 'rgba(0, 245, 255, 0.6)' }
+      },
+      // O型
+      {
+        shape: [[1, 1], [1, 1]],
+        color: { light: '#fff200', dark: '#ccaa00', glow: 'rgba(255, 242, 0, 0.6)' }
+      },
+      // T型
+      {
+        shape: [[0, 1, 0], [1, 1, 1]],
+        color: { light: '#c200ff', dark: '#8800cc', glow: 'rgba(194, 0, 255, 0.6)' }
+      },
+      // L型
+      {
+        shape: [[0, 0, 1], [1, 1, 1]],
+        color: { light: '#ff9500', dark: '#cc6600', glow: 'rgba(255, 149, 0, 0.6)' }
+      },
+      // J型
+      {
+        shape: [[1, 0, 0], [1, 1, 1]],
+        color: { light: '#0066ff', dark: '#0033cc', glow: 'rgba(0, 102, 255, 0.6)' }
+      },
+      // S型
+      {
+        shape: [[0, 1, 1], [1, 1, 0]],
+        color: { light: '#00ff66', dark: '#00aa33', glow: 'rgba(0, 255, 102, 0.6)' }
+      },
+      // Z型
+      {
+        shape: [[1, 1, 0], [0, 1, 1]],
+        color: { light: '#ff3333', dark: '#cc0000', glow: 'rgba(255, 51, 51, 0.6)' }
+      }
+    ];
+
+    // 当前方块 + 下一个方块存储
+    let currentShape = null;
+    let nextShape = null;
+    let currentX = 0;
+    let currentY = 0;
+
+    // 绘制带光滑质感的单个方块（支持主画布+预览画布）
+    function drawSmoothBlock(x, y, color, blockSize, ctxTarget) {
+      const px = x * blockSize;
+      const py = y * blockSize;
+      const radius = blockSize === PREVIEW_BLOCK_SIZE ? 3 : 4; // 预览区圆角适配
+      const padding = blockSize === PREVIEW_BLOCK_SIZE ? 1 : 2; // 预览区内边距适配
+
+      // 1. 外发光效果
+      ctxTarget.shadowBlur = blockSize === PREVIEW_BLOCK_SIZE ? 5 : 10;
+      ctxTarget.shadowColor = color.glow;
+
+      // 2. 绘制圆角方块主体
+      ctxTarget.beginPath();
+      ctxTarget.roundRect(px + padding, py + padding, blockSize - padding * 2, blockSize - padding * 2, radius);
+      
+      // 3. 光滑渐变填充（从上到下亮到暗，模拟果冻质感）
+      const gradient = ctxTarget.createLinearGradient(px, py, px, py + blockSize);
+      gradient.addColorStop(0, color.light);
+      gradient.addColorStop(1, color.dark);
+      ctxTarget.fillStyle = gradient;
+      ctxTarget.fill();
+
+      // 4. 顶部高光，增强光滑质感
+      ctxTarget.shadowBlur = 0;
+      ctxTarget.beginPath();
+      ctxTarget.roundRect(
+        px + padding + (blockSize === PREVIEW_BLOCK_SIZE ? 2 : 3),
+        py + padding + (blockSize === PREVIEW_BLOCK_SIZE ? 2 : 3),
+        blockSize - padding * 2 - (blockSize === PREVIEW_BLOCK_SIZE ? 4 : 6),
+        blockSize === PREVIEW_BLOCK_SIZE ? 5 : 8,
+        radius / 2
+      );
+      const highlightGradient = ctxTarget.createLinearGradient(px, py, px, py + 10);
+      highlightGradient.addColorStop(0, 'rgba(255, 255, 255, 0.6)');
+      highlightGradient.addColorStop(1, 'rgba(255, 255, 255, 0.1)');
+      ctxTarget.fillStyle = highlightGradient;
+      ctxTarget.fill();
+
+      // 5. 底部暗边，增强立体感
+      ctxTarget.beginPath();
+      ctxTarget.roundRect(
+        px + padding + (blockSize === PREVIEW_BLOCK_SIZE ? 2 : 3),
+        py + blockSize - padding - (blockSize === PREVIEW_BLOCK_SIZE ? 3 : 5),
+        blockSize - padding * 2 - (blockSize === PREVIEW_BLOCK_SIZE ? 4 : 6),
+        blockSize === PREVIEW_BLOCK_SIZE ? 2 : 3,
+        radius / 2
+      );
+      ctxTarget.fillStyle = 'rgba(0, 0, 0, 0.3)';
+      ctxTarget.fill();
+    }
+
+    // 绘制棋盘背景网格
+    function drawGrid() {
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.05)';
+      ctx.lineWidth = 1;
+      // 横线
+      for (let i = 0; i <= ROW; i++) {
+        ctx.beginPath();
+        ctx.moveTo(0, i * BLOCK_SIZE);
+        ctx.lineTo(canvas.width, i * BLOCK_SIZE);
+        ctx.stroke();
+      }
+      // 竖线
+      for (let i = 0; i <= COL; i++) {
+        ctx.beginPath();
+        ctx.moveTo(i * BLOCK_SIZE, 0);
+        ctx.lineTo(i * BLOCK_SIZE, canvas.height);
+        ctx.stroke();
+      }
+    }
+
+    // 绘制整个主游戏棋盘
+    function drawBoard() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      drawGrid();
+      // 绘制已固定的方块
+      for (let y = 0; y < ROW; y++) {
+        for (let x = 0; x < COL; x++) {
+          if (board[y][x]) {
+            drawSmoothBlock(x, y, board[y][x], BLOCK_SIZE, ctx);
+          }
+        }
+      }
+      // 绘制当前下落的方块
+      if (currentShape) {
+        for (let y = 0; y < currentShape.shape.length; y++) {
+          for (let x = 0; x < currentShape.shape[y].length; x++) {
+            if (currentShape.shape[y][x]) {
+              drawSmoothBlock(currentX + x, currentY + y, currentShape.color, BLOCK_SIZE, ctx);
+            }
+          }
+        }
+      }
+    }
+
+    // 绘制左侧下一个方块预览
+    function drawNextShape() {
+      // 清空预览画布
+      nextCtx.clearRect(0, 0, nextCanvas.width, nextCanvas.height);
+      if (!nextShape) return;
+
+      // 计算方块的宽高，实现居中显示
+      const shapeWidth = nextShape.shape[0].length;
+      const shapeHeight = nextShape.shape.length;
+      // 计算居中偏移量
+      const offsetX = (nextCanvas.width - shapeWidth * PREVIEW_BLOCK_SIZE) / 2;
+      const offsetY = (nextCanvas.height - shapeHeight * PREVIEW_BLOCK_SIZE) / 2;
+
+      // 绘制预览方块
+      for (let y = 0; y < shapeHeight; y++) {
+        for (let x = 0; x < shapeWidth; x++) {
+          if (nextShape.shape[y][x]) {
+            // 计算预览画布中的坐标
+            const drawX = offsetX / PREVIEW_BLOCK_SIZE + x;
+            const drawY = offsetY / PREVIEW_BLOCK_SIZE + y;
+            drawSmoothBlock(drawX, drawY, nextShape.color, PREVIEW_BLOCK_SIZE, nextCtx);
+          }
+        }
+      }
+    }
+
+    // 生成随机方块（独立函数，复用）
+    function getRandomShape() {
+      const randomIndex = Math.floor(Math.random() * SHAPES.length);
+      // 深拷贝，避免修改原形状数据
+      return JSON.parse(JSON.stringify(SHAPES[randomIndex]));
+    }
+
+    // 生成新的当前方块（联动左侧预览）
+    function spawnNewShape() {
+      // 把下一个方块赋值给当前方块
+      currentShape = nextShape;
+      // 生成新的下一个方块
+      nextShape = getRandomShape();
+      // 居中生成当前方块
+      currentX = Math.floor((COL - currentShape.shape[0].length) / 2);
+      currentY = 0;
+      // 更新左侧预览
+      drawNextShape();
+      // 生成即碰撞，游戏结束
+      if (checkCollision(currentX, currentY, currentShape.shape)) {
+        gameOver = true;
+        showGameOver();
+      }
+    }
+
+    // 碰撞检测
+    function checkCollision(offsetX, offsetY, shape) {
+      for (let y = 0; y < shape.length; y++) {
+        for (let x = 0; x < shape[y].length; x++) {
+          if (shape[y][x]) {
+            const targetX = offsetX + x;
+            const targetY = offsetY + y;
+            // 超出边界
+            if (targetX < 0 || targetX >= COL || targetY >= ROW) {
+              return true;
+            }
+            // 和已固定方块碰撞（Y<0时不检测，允许方块在屏幕外生成）
+            if (targetY >= 0 && board[targetY][targetX]) {
+              return true;
+            }
+          }
+        }
+      }
+      return false;
+    }
+
+    // 旋转方块（控制形状核心函数）
+    function rotateShape() {
+      if (gameOver) return;
+      // 矩阵转置实现旋转
+      const originalShape = currentShape.shape;
+      const rotatedShape = originalShape[0].map((_, index) =>
+        originalShape.map(row => row[index]).reverse()
+      );
+      // 碰撞检测，不碰撞才旋转
+      if (!checkCollision(currentX, currentY, rotatedShape)) {
+        currentShape.shape = rotatedShape;
+      }
+    }
+
+    // 固定方块到棋盘
+    function lockShape() {
+      for (let y = 0; y < currentShape.shape.length; y++) {
+        for (let x = 0; x < currentShape.shape[y].length; x++) {
+          if (currentShape.shape[y][x]) {
+            const targetY = currentY + y;
+            const targetX = currentX + x;
+            if (targetY >= 0) {
+              board[targetY][targetX] = currentShape.color;
+            }
+          }
+        }
+      }
+      // 消行检测
+      clearLines();
+      // 生成新方块（自动更新预览）
+      spawnNewShape();
+    }
+
+    // 消除满行 + 计分
+    function clearLines() {
+      let linesCleared = 0;
+      for (let y = ROW - 1; y >= 0; y--) {
+        // 检测是否整行填满
+        if (board[y].every(cell => cell !== 0)) {
+          // 删除该行，顶部新增空行
+          board.splice(y, 1);
+          board.unshift(Array(COL).fill(0));
+          linesCleared++;
+          y++; // 重新检查当前行
+        }
+      }
+      // 经典计分规则
+      if (linesCleared > 0) {
+        const scoreMap = [0, 100, 300, 600, 1000];
+        score += scoreMap[linesCleared] * level;
+        lines += linesCleared;
+        // 等级提升：每消除10行升1级，下落速度加快
+        const newLevel = Math.floor(lines / 10) + 1;
+        if (newLevel > level) {
+          level = newLevel;
+          dropInterval = Math.max(100, 800 - (level - 1) * 50); // 最低100ms间隔
+        }
+        // 更新UI
+        updateUI();
+      }
+    }
+
+    // 更新UI数据
+    function updateUI() {
+      scoreEl.textContent = score;
+      linesEl.textContent = lines;
+      levelEl.textContent = level;
+      finalScoreEl.textContent = score;
+    }
+
+    // 游戏结束显示
+    function showGameOver() {
+      gameOverMask.style.display = 'flex';
+    }
+
+    // 重置游戏
+    function resetGame() {
+      board = Array(ROW).fill().map(() => Array(COL).fill(0));
+      score = 0;
+      lines = 0;
+      level = 1;
+      dropInterval = 800;
+      gameOver = false;
+      gameOverMask.style.display = 'none';
+      // 重置预览：先生成第一个下一个方块
+      nextShape = getRandomShape();
+      updateUI();
+      spawnNewShape();
+    }
+
+    // 方块下落逻辑
+    function dropShape() {
+      if (gameOver) return;
+      if (!checkCollision(currentX, currentY + 1, currentShape.shape)) {
+        currentY++;
+      } else {
+        lockShape();
+      }
+    }
+
+    // 游戏主循环
+    function gameLoop(timestamp) {
+      if (timestamp - lastDropTime > dropInterval) {
+        dropShape();
+        lastDropTime = timestamp;
+      }
+      drawBoard();
+      requestAnimationFrame(gameLoop);
+    }
+
+    // ========== 键盘事件绑定 ==========
+    document.addEventListener('keydown', (e) => {
+      if (gameOver) return;
+      switch (e.key) {
+        case 'ArrowLeft':
+          if (!checkCollision(currentX - 1, currentY, currentShape.shape)) {
+            currentX--;
+          }
+          break;
+        case 'ArrowRight':
+          if (!checkCollision(currentX + 1, currentY, currentShape.shape)) {
+            currentX++;
+          }
+          break;
+        case 'ArrowDown':
+          dropShape();
+          break;
+        case ' ': // 空格控制方块旋转（形状）
+          e.preventDefault(); // 防止页面滚动
+          rotateShape();
+          break;
+      }
+    });
+
+    // 点击屏幕控制方块旋转（形状）
+    canvas.addEventListener('click', () => {
+      rotateShape();
+    });
+
+    // ========== 新增：虚拟按键点击事件绑定 ==========
+    // 左移按键
+    btnLeft.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (gameOver) return;
+      if (!checkCollision(currentX - 1, currentY, currentShape.shape)) {
+        currentX--;
+      }
+    });
+    // 右移按键
+    btnRight.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (gameOver) return;
+      if (!checkCollision(currentX + 1, currentY, currentShape.shape)) {
+        currentX++;
+      }
+    });
+    // 加速下落按键
+    btnDown.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (gameOver) return;
+      dropShape();
+    });
+    // 变形旋转按键
+    btnChange.addEventListener('click', (e) => {
+      e.preventDefault();
+      rotateShape();
+    });
+
+    // 重新开始按钮绑定
+    restartBtn.addEventListener('click', resetGame);
+    restartBtn2.addEventListener('click', resetGame);
+
+    // 游戏启动：初始化第一个下一个方块，再生成当前方块
+    nextShape = getRandomShape();
+    spawnNewShape();
+    requestAnimationFrame(gameLoop);
+  </script>
+<!-- hexo injector body_end start --><script data-pjax>
+  function butterfly_swiper_injector_config(){
+    var parent_div_git = document.getElementsByClassName('recent-posts')[0];
+    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载butterfly_swiper')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_swiper_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_swiper_injector_config();
+  }
+  </script><script defer src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '1500ms');
+    arr[i].setAttribute('data-wow-delay', '0ms');
+    arr[i].setAttribute('data-wow-offset', '0');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '1500ms');
+    arr[i].setAttribute('data-wow-delay', '0ms');
+    arr[i].setAttribute('data-wow-offset', '0');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script><script async="async">var arr = document.getElementsByClassName('container');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '1500ms');
+    arr[i].setAttribute('data-wow-delay', '0ms');
+    arr[i].setAttribute('data-wow-offset', '0');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script></div><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js"></script><!-- hexo injector body_end end --></body>
+</html></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avator.jpg" onerror="this.onerror=null;this.src='/img/6.gif'" alt="avatar"/></div><div class="author-info-name">Matic</div><div class="author-info-description">这是Matic的网站</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/03/23/hello-world/" title="Hello World"><img src="https://picsum.photos/1200/600" onerror="this.onerror=null;this.src='/img/6.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2026/03/23/hello-world/" title="Hello World">Hello World</a><time datetime="2026-03-23T07:00:00.000Z" title="发表于 2026-03-23 15:00:00">2026-03-23</time></div></div></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/03/">
+            <span class="card-archive-list-date">
+              三月 2026
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">1</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-03-25T16:11:10.030Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(/img/1.png);"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By Matic</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.1</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.4</a></span></div></div><!-- 动态粒子线条效果（直接嵌入，100%生效）--><script src="https://cdn.bootcdn.net/ajax/libs/canvas-nest.js/2.0.4/canvas-nest.js?color=0,0,0&amp;zIndex=1&amp;count=175" async="async"></script></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.4"></script><script src="/js/main.js?v=5.5.4"></script><div class="js-pjax"></div><script src="/js/jq.js"></script><script src="/js/fish.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="搜索文章..." type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=5.5.4"></script></div></div><!DOCTYPE html></body></html><html><head><meta charset="UTF-8"><title>烟花动画示例</title><style>/* 页面基础样式，避免canvas遮挡内容 */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #000; /* 黑色背景更显烟花效果 */
+}</style></head><body><!-- 烟花canvas容器 --><canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas><!-- 引入依赖库和自定义脚本 --><script src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script><script src="/js/fireworks.js"></script></body></html><script type="text/javascript" src="/js/FunnyTitle.js"></script>

@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'font';//字体名称
+  font-display: swap;
+  src: url('../font/font.ttf') format("truetype"); //字体的所在位置
+}
+body {
+    font-family: 'font';//应用字体
+}
